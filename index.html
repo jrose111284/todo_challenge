@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="components/moment/moment.js"></script>
+    <script src="components/angular-moment/angular-moment.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="js/app.js"></script>
     <script src="js/todoController.js"></script>
@@ -15,12 +17,14 @@
     <div>
         <input type="text" ng-model="toDoList.newTodo"/>
         <button ng-click="toDoList.addToList()">Go</button>
-      <button ng-click="clear()">clear</button>
+      <button ng-click="toDoList.clear()">clear</button>
       <ul>
         <li class="todo" ng-repeat="todo in toDoList.list">
-          <input type="checkbox"/>
-          {{todo.title}}
+          <input type="checkbox" ng-model='todo.done'/>
+            {{todo.title}}
+          <span>{{toDoList.time}}</span>
         </li>
+        <div class="todo-count">{{toDoList.list.length}} of {{toDoList.list.length}} todos remaining</div>
       </ul>
     </div>
   </body>
