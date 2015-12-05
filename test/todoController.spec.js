@@ -1,10 +1,11 @@
-
-describe('GitUserSearchController', function() {
-  beforeEach(module('todoApp'));
+describe('todoController', function() {
+  beforeEach(module('toDoList'));
 
   var ctrl;
 
-  beforeEach(inject(function($controller) {
-    ctrl = $controller('todoController');
+  beforeEach(inject(function($controller){
+    ctrl = $controller('TodoController');
   }));
+
+
 });
