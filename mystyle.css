@@ -1,0 +1,44 @@
+#title {
+  border:3px solid black;
+  height: 40px;
+  width: 60px;
+  margin-left: 40%;
+}
+
+#img {
+  border:3px solid black;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-left: 35%;
+
+}
+
+
+#body {
+background-color: #A9A9A9;
+}
+
+#box {
+  background-color: white;
+  height: 300px;
+  margin-top: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 10px;
+  margin-bottom: 40px;
+  border:3px solid black;
+
+}
+
+#searchbox {
+  width: 200px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 36%;
+  border:3px solid black;
+
+}
+#totalcount {
+  margin-left: 45%;
+  margin-bottom: 40px;
+}
