@@ -1,3 +1,19 @@
+instruction:
+use git clone https://github.com/jrose111284/todo_challenge
+run bower install
+Then to run loacally in browser type
+open index.html into browser
+
+to test unit test use
+karma start test/karma.conf.js command
+
+to test feature tests
+npm install --save http-server,
+npm install http-server -g,
+then run http-server
+then use this command in terminal
+protractor test/e2e/conf.js
+
 # Todo Challenge
 
 * Deadline: submit completed pull request by 9am on Monday
@@ -6,7 +22,7 @@
 Steps
 -------
 
-1. Fill out your learning plan self review for the week: https://github.com/makersacademy/learning_plan 
+1. Fill out your learning plan self review for the week: https://github.com/makersacademy/learning_plan
 2. Fork this repo, and clone to your local machine
 3. Complete the following challenge:
 
@@ -64,7 +80,7 @@ Don't worry about deployment, and make sure you read the CONTRIBUTING.md when su
 
 ## CI
 
-Read the `.travis.yml` if any of the steps below don't make sense! 
+Read the `.travis.yml` if any of the steps below don't make sense!
 
 * Make sure you have set up `npm test` in your `package.json` so that it runs your Karma tests
 * Make sure you have your Protractor config file at `e2e/conf.js`
