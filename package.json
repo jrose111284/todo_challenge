@@ -1,35 +1,37 @@
 {
-  "name": "todo_challenge",
+  "name": "github",
   "version": "1.0.0",
-  "description": "* Deadline: submit completed pull request by 9am on Monday * You may use whatever level of JavaScript you feel comfortable with - pure JS, jQuery, Angular, or whatever weird and wonderful framework you want to try. Extra points for DogeScript",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "express": "^4.13.3",
-    "http-server": "^0.8.5",
-    "jasmine-core": "^2.4.1",
-    "karma": "^0.13.15",
-    "karma-chrome-launcher": "^0.2.2",
-    "karma-jasmine": "^0.3.6",
-    "karma-phantomjs-launcher": "^0.2.1",
-    "phantomjs": "^1.9.19",
-    "protractor": "^3.0.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "start": "node app.js",
-    "postinstall": "bower install"
-  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jrose111284/todo_challenge.git"
   },
-  "author": "",
-  "license": "ISC",
+
   "bugs": {
     "url": "https://github.com/jrose111284/todo_challenge/issues"
   },
-  "homepage": "https://github.com/jrose111284/todo_challenge#readme"
+
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.15",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9.19"
+  },
+
+  "scripts": {
+    "start": "node app.js",
+    "postinstall": "bower install"
+  },
+
+  "dependencies": {
+    "express": "^4.13.3",
+    "http-server": "^0.8.5",
+    "bower": "^1.6.8"
+  }
 }
