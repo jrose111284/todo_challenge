@@ -12,10 +12,10 @@
     <script src="js/todoController.js"></script>
   </head>
 
-  <body ng-controller="todoController as toDoList">
+  <body id='color' ng-controller="todoController as toDoList">
     <div id="body">
       <img id="img" src="image/TODO_02.jpg" alt="todo image" style="width:304px;height:110px;">
-        <input id="searchbox" type="text" placeholder="please type a todo" ng-model="toDoList.newTodo"/>
+        <input id="searchbox" type="text" placeholder="please type a todo...." ng-model="toDoList.newTodo"/>
         <button ng-click="toDoList.addToList()" id="submit">Go</button>
       <button id="clear" ng-click="toDoList.clear()">clear</button>
     <div id='box'>
