@@ -21,4 +21,15 @@ describe('todoController', function () {
     expect(ctrl.list.length).toBe(0);
   });
 
+  it('should add 2 items to the list', function () {
+    ctrl.addToList();
+    ctrl.addToList();
+    expect(ctrl.list.length).toBe(2);
+  });
+
+  it('should add 2 items to the list and remove one', function () {
+    ctrl.addToList(2);
+    ctrl.clear(0);
+    expect(ctrl.list.length).toBe(1);
+  });
 });
