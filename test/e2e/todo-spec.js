@@ -26,10 +26,10 @@ describe('will remove a todo list', function() {
     browser.get('http://localhost:8080');
 
     element(by.model('toDoList.newTodo')).sendKeys('get milk, bread and cheese');
-    element(by.css('[id="submit"]')).click();
     element(by.css('[id="clear"]')).click();
-
+    var todoList = element.all(by.repeater('todo in toDoList.list'));
     expect(todoList.count()).toEqual(0);
+
 
   });
 });
