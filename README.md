@@ -1,19 +1,59 @@
-instruction:
-use git clone https://github.com/jrose111284/todo_challenge
-run bower install
-Then to run loacally in browser type
-open index.html into browser
+Instruction:
+To download my repo
+```
+$ git clone https://github.com/jrose111284/todo_challenge
+```
+Now run ..
+```
+$ bower install
+```
+If you want to see my app working..
+```
+open index.html
+```
 
-to test unit test use
-karma start test/karma.conf.js command
+To test unit test with karma
+```
+$ karma start test/karma.conf.js
+```
+Here is how you test my feature test with protractor
+please follow these commands
+```
+$ npm install -g protractor
+$ webdriver-manager update
+$ webdriver-manager start
+$ npm install --save http-server,
+$ npm install http-server -g,
+$ http-server
+```
+Now run this command to see the tests
+make sure http server and webdriver are running in another terminal window
+```
+$ webdriver-manager start
+$ http-server
+```
+Now you can run
+```
+$ protractor test/e2e/conf.js
+```
 
-to test feature tests
-npm install --save http-server,
-npm install http-server -g,
-then run http-server
-then use this command in terminal
-protractor test/e2e/conf.js
+tried to deploy to heroku keeped getting this error
 
+```
+remote:        We're sorry this build is failing! You can troubleshoot common issues here:
+remote:        https://devcenter.heroku.com/articles/troubleshooting-node-deploys
+remote:
+remote:        Some possible problems:
+remote:
+remote:        - Node version not specified in package.json
+remote:        https://devcenter.heroku.com/articles/nodejs-support#specifying-a-node-js-version
+remote:
+remote:        - Bower may not be tracked in package.json
+remote:        https://devcenter.heroku.com/articles/troubleshooting-node-deploys#ensure-you-aren-t-relying-on-untracked-dependencies
+remote:
+```
+
+Think it something to do with my npm package.json. Ran out of time this weekend will try and fix issue soon.
 # Todo Challenge
 
 * Deadline: submit completed pull request by 9am on Monday
