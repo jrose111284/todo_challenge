@@ -6,6 +6,7 @@ $ git clone https://github.com/jrose111284/todo_challenge
 Now run ..
 ```
 $ bower install
+$ npm install
 ```
 If you want to see my app working..
 ```
@@ -19,23 +20,16 @@ $ karma start test/karma.conf.js
 Here is how you test my feature test with protractor
 please follow these commands
 ```
-$ npm install -g protractor
-$ webdriver-manager update
 $ webdriver-manager start
-$ npm install --save http-server,
-$ npm install http-server -g,
 $ http-server
 ```
-Now run this command to see the tests
 make sure http server and webdriver are running in another terminal window
-```
-$ webdriver-manager start
-$ http-server
-```
-Now you can run
+
+Now you can run in a new terminal window make sure you in the correct directory
 ```
 $ protractor test/e2e/conf.js
 ```
+What i didnt complete!
 
 tried to deploy to heroku keeped getting this error
 
