@@ -1,4 +1,7 @@
-Instruction:
+### Instructions
+
+![todo](image/todo.png)
+
 To download my repo
 ```
 $ git clone https://github.com/jrose111284/todo_challenge
